@@ -41,7 +41,7 @@ a,a:hover,a:focus{
     background-color:#fff;
 }
 .on{
-    background-color:#222 !important;
+    background-color:#251917 !important;
     color:#fff;
     padding:0 !important;
 }
@@ -175,68 +175,6 @@ p.intro{
 }
 /*end style Services page*/
 
-/*Team page style start*/
-#tf-team{
-    background:url(../images/bg-02.jpg) no-repeat center fixed;
-    background-size:cover;
-    color:#fff;
-}
-#tf-team .overlay{
-    height:auto;
-    padding:80px 0;
-    background: -moz-linear-gradient(top, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.73) 17%, rgba(0,0,0,0.66) 35%, rgba(0,0,0,0.55) 62%, rgba(0,0,0,0.4) 100%);
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0.8)), color-stop(17%,rgba(0,0,0,0.73)), color-stop(35%,rgba(0,0,0,0.66)), color-stop(62%,rgba(0,0,0,0.55)), color-stop(100%,rgba(0,0,0,0.4)));
-    background: -webkit-linear-gradient(top, rgba(0,0,0,0.8) 0%,rgba(0,0,0,0.73) 17%,rgba(0,0,0,0.66) 35%,rgba(0,0,0,0.55) 62%,rgba(0,0,0,0.4) 100%);
-    background: -o-linear-gradient(top, rgba(0,0,0,0.8) 0%,rgba(0,0,0,0.73) 17%,rgba(0,0,0,0.66) 35%,rgba(0,0,0,0.55) 62%,rgba(0,0,0,0.4) 100%);
-    background: -ms-linear-gradient(top, rgba(0,0,0,0.8) 0%,rgba(0,0,0,0.73) 17%,rgba(0,0,0,0.66) 35%,rgba(0,0,0,0.55) 62%,rgba(0,0,0,0.4) 100%);
-    background: linear-gradient(to bottom, rgba(0,0,0,0.8) 0%,rgba(0,0,0,0.73) 17%,rgba(0,0,0,0.66) 35%,rgba(0,0,0,0.55) 62%,rgba(0,0,0,0.4) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cc000000', endColorstr='#66000000',GradientType=0 );
-}
-/*轮播开始*/
-#team{
-    margin:0 auto;
-}
-#team .item{
-    color:#fff;
-    text-align:center;
-    padding:0;
-    margin:15px;
-}
-#team .thumbnail{
-    background:transparent;
-    border:0;
-}
-#team .thumbnail img.img-circle.img-item{
-    width:120px;
-    height:120px;
-    border:4px solid transparent;
-    transition:all 0.5s;
-}
-#team .thumbnail .caption{
-    padding:9px;
-    color:#F2F2F2;
-}
-#team h3{
-    text-transform:none;
-    font-size:18px;
-    font-weight:900;
-}
-#team .item .thumbnail:hover > img.img-circle.img-item{
-    border:4px solid #fa0;
-}
-#tf-team .owl-theme .owl-controls .owl-page.active span{
-    background:#fa0;
-}
-#tf-team .owl-theme .owl-controls .owl-page span{
-    display:block;
-    width:10px;
-    height:10px;
-    background:#fff;
-    transition:all 0.5s;
-    border-radius:0;
-}
-/*end style Team page*/
-
 /*Works page style start*/
 #tf-works{
     padding:80px 0;
@@ -268,7 +206,7 @@ p.intro{
     margin-bottom:30px;
 }
 .portfolio-item .hover-bg{
-    height:260px;
+    height:130px;
     overflow:hidden;
 }
 .isotope-item{
@@ -295,4 +233,23 @@ p.intro{
         float:none !important;
         display:block;
     }
+}
+
+/*footer*/
+nav#footer {
+    background: #251917;
+    color: #ffffff;
+    padding: 20px 0 15px 0;
+}
+nav#footer .fnav {
+    vertical-align: middle;
+    margin: 0 auto;
+}
+nav#footer p {
+    font-size: 12px;
+    margin-top: 10px;
+    text-align: center;
+}
+a {
+    color: #FCAC45;
 }

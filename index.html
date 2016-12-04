@@ -7,9 +7,11 @@
     <title>Star</title>
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
+    <link href="css/lightbox.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/font-awesome.min.css"/>
     <link href="owl-carousel/owl.carousel.css" rel="stylesheet">
     <link href="owl-carousel/owl.theme.css" rel="stylesheet">
+
     <!-- HTML5 Shim 和 Respond.js 用于让 IE8 支持 HTML5元素和媒体查询 -->
     <!-- 注意： 如果通过 file://  引入 Respond.js 文件，则该文件无法起效果 -->
     <!--[if lt IE 9]>
@@ -42,7 +44,7 @@
 <div id="tf-home" class="text-center">
     <div class="overlay">
         <div class="content">
-            <h1>欢迎大家来访 <strong class="colors">STAR个人网站</strong></h1>
+            <h1>欢迎来访 <strong class="colors">STAR个人网站</strong></h1>
 
             <p class="lead">
                 我会持续更新加入
@@ -68,7 +70,7 @@
                     <hr/>
                 </div>
                 <div class="clearfix"></div>
-                <p class="intro">座右铭：无私奉献不是天方夜谭，有时候，我们也可以做到。</p>
+                <p class="intro">座右铭：如果你为失去太阳而哭泣，你也将错过群星！</p>
                 <ul class="list-unstyled about-list">
                     <li><span class="fa fa-dot-circle-o"></span> <strong>籍贯</strong> - <em>英雄莫问出处
                     <li><span class="fa fa-dot-circle-o"></span> <strong>技能</strong> - <em>Javascript、jQuery、AngularJS、EasyUi、BootStrap、H5、CSS3、Ajax、PS</em></li>
@@ -82,108 +84,116 @@
 <div id="tf-works">
     <div class="container">
         <div class="section-title text-center center">
-            <h2>Take a look at <strong>our services</strong></h2>
+            <h2>以下是我的一些 <strong>作品展示</strong></h2>
             <div class="line">
                 <hr/>
             </div>
             <small>
-                <em>Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes
-                    of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very
-                    popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes
-                    from a line in section 1.10.32.</em>
+                <em>偏B/S性质的项目，会以图片的方式展现给大家，其余的会给出地址及图片演示。</em>
             </small>
         </div>
         <div class="categories clearfix">
-            <h4 class="pull-left">Filter by Type:</h4>
+            <h4 class="pull-left">按类型查看:</h4>
             <ul id="cat" class="pull-right list-unstyled type">
-                <li><a href="" class="active" data-filter="*">All</a></li>
-                <li><a href="" data-filter=".web">Web Design</a></li>
-                <li><a href="" data-filter=".photography">Photography</a></li>
-                <li><a href="" data-filter=".app">Mobile App</a></li>
-                <li><a href="" data-filter=".branding">Branding</a></li>
+                <li><a href="" class="active" data-filter="*">全部</a></li>
+                <li><a href="" data-filter=".gw">公卫项目</a></li>
+                <li><a href="" data-filter=".web">HRCM项目</a></li>
+                <li><a href="" data-filter=".db">夺宝项目</a></li>
+                <li><a href="" data-filter=".branding">Demo 汇总</a></li>
             </ul>
         </div>
-        <div id="lightBox" class="row">
-            <div class="col-md-3 col-sm-6 branding web">
+        <div id="lightBoxS" class="row">
+            <div class="col-md-3 col-sm-6 gw">
                 <div class="portfolio-item">
                     <div class="hover-bg">
-                        <a href="">
-                            <img src="images/01(1).jpg" alt="" class="img-responsive"/>
+                        <a class="example-image-link" href="images/gw01.png" data-lightbox="example-set" >
+                            <img class="img-responsive" src="images/gw01.png" alt=""/>
                         </a>
                     </div>
                 </div>
             </div>
-            <div class="col-md-3 col-sm-6 photography web">
+            <div class="col-md-3 col-sm-6 gw">
                 <div class="portfolio-item">
                     <div class="hover-bg">
-                        <a href="">
-                            <img src="images/02(2).jpg" alt="" class="img-responsive"/>
+                         <a class="example-image-link" href="images/gw02.png" data-lightbox="example-set" >
+                            <img class="img-responsive" src="images/gw02.png" alt=""/>
                         </a>
                     </div>
                 </div>
             </div>
-            <div class="col-md-3 col-sm-6 branding app">
+            <div class="col-md-3 col-sm-6 gw">
                 <div class="portfolio-item">
                     <div class="hover-bg">
-                        <a href="">
-                            <img src="images/03(1).jpg" alt="" class="img-responsive"/>
+                        <a class="example-image-link" href="images/gw03.png" data-lightbox="example-set" >
+                            <img class="img-responsive" src="images/gw03.png" alt=""/>
                         </a>
                     </div>
                 </div>
             </div>
-            <div class="col-md-3 col-sm-6 photography">
+            <div class="col-md-3 col-sm-6 gw">
                 <div class="portfolio-item">
                     <div class="hover-bg">
-                        <a href="">
-                            <img src="images/04(1).jpg" alt="" class="img-responsive"/>
+                         <a class="example-image-link" href="images/gw04.png" data-lightbox="example-set" >
+                            <img class="img-responsive" src="images/gw04.png" alt=""/>
                         </a>
                     </div>
                 </div>
             </div>
-            <div class="col-md-3 col-sm-6 branding">
+            <div class="col-md-3 col-sm-6 db">
                 <div class="portfolio-item">
                     <div class="hover-bg">
-                        <a href="">
-                            <img src="images/05.jpg" alt="" class="img-responsive"/>
+                         <a class="example-image-link" href="images/db01.png" data-lightbox="example-set" >
+                            <img class="img-responsive" src="images/db01.png" alt=""/>
                         </a>
                     </div>
                 </div>
             </div>
-            <div class="col-md-3 col-sm-6 web app">
+            <div class="col-md-3 col-sm-6 db">
                 <div class="portfolio-item">
                     <div class="hover-bg">
-                        <a href="">
-                            <img src="images/06.jpg" alt="" class="img-responsive"/>
+                         <a class="example-image-link" href="images/db02.png" data-lightbox="example-set" >
+                            <img class="img-responsive" src="images/db02.png" alt=""/>
                         </a>
                     </div>
                 </div>
             </div>
-            <div class="col-md-3 col-sm-6 photography">
+            <div class="col-md-3 col-sm-6 db">
                 <div class="portfolio-item">
                     <div class="hover-bg">
-                        <a href="">
-                            <img src="images/07.jpg" alt="" class="img-responsive"/>
+                         <a class="example-image-link" href="images/db03.png" data-lightbox="example-set" >
+                            <img class="img-responsive" src="images/db03.png" alt=""/>
                         </a>
                     </div>
                 </div>
             </div>
-            <div class="col-md-3 col-sm-6 app web">
+            <div class="col-md-3 col-sm-6 db">
                 <div class="portfolio-item">
                     <div class="hover-bg">
-                        <a href="">
-                            <img src="images/08.jpg" alt="" class="img-responsive"/>
+                         <a class="example-image-link" href="images/db04.png" data-lightbox="example-set" >
+                            <img class="img-responsive" src="images/db04.png" alt=""/>
                         </a>
                     </div>
                 </div>
             </div>
+
         </div>
     </div>
 </div>
 
+<nav id="footer">
+    <div class="container">
+        <div class="fnav">
+            <p> COPYRIGHT © 2016. Designed by <a href="#">Star</a></p>
+        </div>
+    </div>
+</nav>
+<script type="text/javascript" src="js/lightbox-plus-jquery.min.js"></script>
 <script type="text/javascript" src="js/jquery.min.js"></script>
 <script type="text/javascript" src="owl-carousel/owl.carousel.js"></script>
 <script type="text/javascript" src="js/bootstrap.min.js"></script>
 <script type="text/javascript" src="js/jquery.isotope.js"></script>
+
+
 <script>
     $(window).bind("scroll", function () {
         var navHeight = $(window).height() - 300;
@@ -214,7 +224,7 @@
         }
     });
 
-    var $container = $("#lightBox");
+    var $container = $("#lightBoxS");
     $container.isotope({
         filter:"*",
         animationOptions:{
