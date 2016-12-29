@@ -3,7 +3,7 @@
 
   // Loading..
   $(window).load(function() {
-    $('#preloader').delay(200).fadeOut('slow');
+    $('#preloader').delay(300).fadeOut('slow');
   });
 
   $(document).ready(function() {
@@ -19,23 +19,6 @@
       ],
       animation: [ 'kenburnsUp', 'kenburnsDown', 'kenburnsLeft', 'kenburnsRight' ]
     });
-
-/*    $('a#prev').on('click', function (e) {
-      e.preventDefault();
-      $vegasSlide.vegas('next');
-    });
-    $('a#toggle').on('click', function (e) {
-      e.preventDefault();
-      $(this).toggleClass("pause");
-      $(".slide-controller").toggleClass("active");
-      $vegasSlide.vegas('toggle');
-    });
-    $('a#next').on('click', function (e) {
-      e.preventDefault();
-      $vegasSlide.vegas('previous');
-    });*/
-
-
 
   });
 
