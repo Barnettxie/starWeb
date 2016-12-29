@@ -3,20 +3,11 @@
 
   // Loading..
   $(window).load(function() {
-    $('#preloader').delay(350).fadeOut('slow');
+    $('#preloader').delay(200).fadeOut('slow');
   });
 
   $(document).ready(function() {
 
-    // clik Loading...
-    $('#smooth-loading').click(function(e){
-      e.preventDefault();
-      var t = $(this).attr('href');
-      $('#preloader').delay(350).fadeIn('slow',function(){
-        window.location.href = t;
-      });
-    });
-    
     // vegasSlide Bg
     var $vegasSlide = $('.vegas-slide');
 
