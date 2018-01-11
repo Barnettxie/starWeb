@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    	<meta name="viewport" content="width=device-width, initial-scale=1">
+ 		<meta name="renderer" content="webkit">
+		<title>新增任务</title>
+		<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+		<style type="text/css">
+			body{padding: 20px;}
+			.borderStyle{border: 1px solid #ddd; background: #f3f9ff;}
+			.input-date{height: 34px !important;width: 67% !important;}
+			.inpSelct-middle{width: 67% !important;}
+			.panel-heading{padding: 1px 13px;}
+			.zPanel{color: #31708f;background-color: #d9edf7;border-color: #bce8f1;}
+			.control-label{font-size: 13px; color: black; font-weight:10 !important;}
+		</style>
+	</head>
+	<body>
+		<!--任务基本信息 S-->
+		<div class="panel zPanel">
+		  <div class="panel-heading">
+		    <h6>任务基本信息</h6>
+		  </div>
+		  <form method="post" action="" class="form-inline">
+		  	<div class="container-fluid">
+				<div class="row">
+					<div class="col-xs-12 col-sm-6 col-md-3 borderStyle">
+						<label class="control-label">任务小组</label>
+				   		<select class="form-control inpSelct-middle" >
+							<option></option>
+				   		</select>
+					</div>
+					<div class="col-xs-12 col-sm-6 col-md-3 borderStyle">
+						<label class="control-label">任务类型</label>
+				    	<select class="form-control inpSelct-middle"></select>
+					</div>
+
+					<div class="col-xs-12 col-sm-6 col-md-3 borderStyle">
+						<label class="control-label">项目名称</label>
+				    	<select class="form-control inpSelct-middle"></select>
+					</div><div class="clearfix visible-xs-block"></div>
+					<div class="col-xs-12 col-sm-6 col-md-3 borderStyle">
+						<label class="control-label">预估日期</label>
+				    	<input class="Wdate form-control input-date" type="text" onclick="WdatePicker({skin:'whyGreen'})"/>
+					</div>
+				</div>
+			</div>
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-xs-12 col-sm-6 col-md-2 borderStyle">
+						<label class="control-label">任务级别</label>
+			    		<select class="form-control inpSelct-middle"></select>
+					</div>
+					<div class="col-xs-12 col-sm-6 col-md-2 borderStyle">
+						<label class="control-label">提出方式</label>
+			    		<select class="form-control inpSelct-middle" ></select>
+					</div>
+					<div class="col-xs-12 col-sm-6 col-md-2 borderStyle">
+						<label class="control-label">提出日期</label>
+			    		<input class="Wdate form-control input-date" type="text" onclick="WdatePicker({skin:'whyGreen'})"/>
+					</div><div class="clearfix visible-xs-block"></div>
+					<div class="col-xs-12 col-sm-6 col-md-2 borderStyle">
+						<label class="control-label">提出人员</label>
+			    		<input type="text" id="" class="form-control inpSelct-middle" name="">
+					</div>
+					<div class="col-xs-12 col-sm-6 col-md-2 borderStyle">
+						<label class="control-label">任务分值</label>
+			   			<input type="text" id="" class="form-control inpSelct-middle" name="">
+					</div>
+					<div class="col-xs-12 col-sm-6 col-md-2 borderStyle">
+						<label class="control-label">任务时长</label>
+			    		<input type="text" id="" class="form-control inpSelct-middle" name="">
+					</div>
+
+				</div>
+			</div>
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-xs-12 col-sm-12 col-md-12 borderStyle">
+						<label class="control-label">任务名称</label>
+			    		<textarea class="form-control" rows="3" cols="87%"></textarea>
+					</div>
+				</div>
+			</div>
+			<!--任务基本信息 E-->
+			<!--任务考核信息 S-->
+			<div class="panel-heading  panel-info">
+				<h6>任务考核信息</h6>
+			</div>
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-xs-12 col-sm-6 col-md-3 borderStyle">
+						<label class="control-label">任务小组</label>
+				   		<select class="form-control inpSelct-middle" >
+							<option></option>
+				   		</select>
+					</div>
+					<div class="col-xs-12 col-sm-6 col-md-3 borderStyle">
+						<label class="control-label">执行人员</label>
+				   		<input type="text" id="" class="form-control inpSelct-middle" name="">
+					</div>
+					<div class="col-xs-12 col-sm-6 col-md-3 borderStyle">
+						<label class="control-label">考核分值</label>
+				   		<input type="text" id="" class="form-control inpSelct-middle" name="">
+					</div>
+					<div class="col-xs-12 col-sm-6 col-md-3 borderStyle">
+						<label class="control-label">考核时长</label>
+				   		<input type="text" id="" class="form-control inpSelct-middle" name="">
+					</div>
+				</div>
+			</div>
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-xs-12 col-sm-12 col-md-12 borderStyle">
+						<label class="control-label">任务名称</label>
+			    		<textarea class="form-control" rows="3" cols="87%"></textarea>
+					</div>
+				</div>
+			</div>
+			<!--任务考核信息 S-->
+			<!--保存取消 S-->
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-xs-3 col-xs-offset-5 col-md-2 col-md-offset-8">
+						<button type="button" class="btn btn-primary">保存确认</button>
+					</div>
+					<div class="col-xs-4 col-md-2">
+						<button type="button" class="btn btn-primary">取消退出</button>
+					</div>
+				</div>
+			</div>
+			<!--保存取消 E-->
+		  </form>
+		</div>
+		
+		
+		<script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+		<script language="javascript" type="text/javascript" src="datepicker/WdatePicker.js"></script>
+		<script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+	</body>
+</html>
